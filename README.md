@@ -5,10 +5,13 @@ For example
 ```
 $ pdfcomp example_pdf.pdf example_pdf_compressed.pdf
 ```
+leads to:
 
+```
 Shrinking pdf example_pdf.pdf into example_pdf_compressed.pdf
 Original file size:
-392K	example_pdf.pdf
+44M	example_pdf.pdf
 GPL Ghostscript 9.07: Set UseCIEColor for UseDeviceIndependentColor to work properly.
 Compressed file size:
-440K	example_pdf_compressed.pdf
+20M	example_pdf_compressed.pdf
+```
