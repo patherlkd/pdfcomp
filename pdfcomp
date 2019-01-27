@@ -1,0 +1,10 @@
+#!/bin/bash
+
+input=$1
+output=$2
+echo Shrinking pdf "$1" into "$2"
+echo Original file size:
+du -sh "$1"
+gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/printer -dNOPAUSE -dQUIET -dBATCH -sOutputFile="$2" "$1"
+echo Compressed file size:
+du -sh "$2"
